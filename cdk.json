@@ -76,6 +76,16 @@
     "@aws-cdk/core:cfnIncludeRejectComplexResourceUpdateCreatePolicyIntrinsics": true,
     "@aws-cdk/aws-lambda-nodejs:sdkV3ExcludeSmithyPackages": true,
     "@aws-cdk/aws-stepfunctions-tasks:fixRunEcsTaskPolicy": true,
-    "@aws-cdk/aws-ec2:bastionHostUseAmazonLinux2023ByDefault": true
+    "@aws-cdk/aws-ec2:bastionHostUseAmazonLinux2023ByDefault": true,
+    "env": {
+      "dev": {
+        "account": "32132132121",
+        "region": "us-west-2"
+      },
+        "prod": {
+            "account": "123456789012",
+            "region": "us-west-2"
+        }
+    }
   }
 }

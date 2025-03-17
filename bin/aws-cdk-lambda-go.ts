@@ -1,20 +1,39 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
 import { AwsCdkLambdaGoStack } from '../lib/aws-cdk-lambda-go-stack';
+import {AwsCdkLambdaGoStackProd} from "../lib/aws-cdk-lambda-go-stack-prod";
 
 const app = new cdk.App();
-new AwsCdkLambdaGoStack(app, 'AwsCdkLambdaGoStack', {
-  /* If you don't specify 'env', this stack will be environment-agnostic.
-   * Account/Region-dependent features and context lookups will not work,
-   * but a single synthesized template can be deployed anywhere. */
 
-  /* Uncomment the next line to specialize this stack for the AWS Account
-   * and Region that are implied by the current CLI configuration. */
+// Development stack
+new AwsCdkLambdaGoStack(app, 'AwsCdkLambdaGoStackDev', {
+  /* Development environment configuration */
   // env: { account: process.env.CDK_DEFAULT_ACCOUNT, region: process.env.CDK_DEFAULT_REGION },
 
-  /* Uncomment the next line if you know exactly what Account and Region you
-   * want to deploy the stack to. */
-  // env: { account: '123456789012', region: 'us-east-1' },
+  /* You can add development-specific properties here */
+  tags: {
+    Environment: 'development',
+  },
 
-  /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
+  env: {
+    account: process.env.AWS_ACCOUNT,
+    region: process.env.AWS_REGION,
+  },
+
+});
+
+
+new AwsCdkLambdaGoStackProd(app, 'AwsCdkLambdaGoStackProd', {
+  /* Production environment configuration */
+  // env: { account: process.env.CDK_DEFAULT_ACCOUNT, region: process.env.CDK_DEFAULT_REGION },
+
+    env: {
+        account: app.node.tryGetContext('env') ? app.node.tryGetContext('env').prod.account : process.env.CDK_DEFAULT_ACCOUNT,
+        region: app.node.tryGetContext('env') ? app.node.tryGetContext('env').prod.region : process.env.CDK_DEFAULT_REGION,
+    },
+
+  /* You can add production-specific properties here */
+  tags: {
+    Environment: 'production',
+  },
 });
