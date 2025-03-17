@@ -13,6 +13,7 @@ new AwsCdkLambdaGoStack(app, 'AwsCdkLambdaGoStackDev', {
   /* You can add development-specific properties here */
   tags: {
     Environment: 'development',
+    project: 'aws-go-lambda',
   },
 
   env: {
@@ -35,5 +36,6 @@ new AwsCdkLambdaGoStackProd(app, 'AwsCdkLambdaGoStackProd', {
   /* You can add production-specific properties here */
   tags: {
     Environment: 'production',
+    project: 'aws-go-lambda',
   },
 });
