@@ -26,14 +26,7 @@ export class AwsCdkLambdaGoStack extends cdk.Stack {
       this.stage = 'unknown';
     }
 
-    console.log(`Deploying stack in ${this.stage} stage`);
-
-    // The code that defines your stack goes here
-
-    // example resource
-    // const queue = new sqs.Queue(this, 'AwsCdkLambdaGoQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
+    console.log("Stage: ", this.stage);
 
     const lambda1 = new lambda.Function(this, 'GoFunction1', {
       runtime: lambda.Runtime.PROVIDED_AL2023,
@@ -98,8 +91,5 @@ export class AwsCdkLambdaGoStack extends cdk.Stack {
     });
   }
 
-  // Method to get the current stage
-  public getStage(): string {
-    return this.stage;
-  }
+
 }
