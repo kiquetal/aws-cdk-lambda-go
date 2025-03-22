@@ -1,0 +1,983 @@
+[
+    {
+        "Id": "06a5be32990e004eadcc249476b8a74ecc6147f14343b4713d5cd0e15709c1d6",
+        "Created": "2025-03-21T02:27:04.518276371Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1913327,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2025-03-21T02:27:04.675630879Z",
+            "FinishedAt": "0001-01-01T00:00:00Z",
+            "Health": {
+                "Status": "healthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2025-03-21T01:12:17.954402011-03:00",
+                        "End": "2025-03-21T01:12:18.502223749-03:00",
+                        "ExitCode": 0,
+                        "Output": "{\"acm\": \"disabled\", \"apigateway\": \"disabled\", \"cloudformation\": \"disabled\", \n\"cloudwatch\": \"disabled\", \"config\": \"disabled\", \"dynamodb\": \"disabled\", \n\"dynamodbstreams\": \"disabled\", \"ec2\": \"disabled\", \"es\": \"disabled\", \"events\": \n\"disabled\", \"firehose\": \"disabled\", \"iam\": \"disabled\", \"kinesis\": \"disabled\", \n\"kms\": \"disabled\", \"lambda\": \"disabled\", \"logs\": \"disabled\", \"opensearch\": \n\"disabled\", \"redshift\": \"disabled\", \"resource-groups\": \"disabled\", \n\"resourcegroupstaggingapi\": \"disabled\", \"route53\": \"disabled\", \n\"route53resolver\": \"disabled\", \"s3\": \"running\", \"s3control\": \"disabled\", \n\"scheduler\": \"disabled\", \"secretsmanager\": \"disabled\", \"ses\": \"disabled\", \"sns\":\n\"disabled\", \"sqs\": \"available\", \"ssm\": \"disabled\", \"stepfunctions\": \"disabled\", \n\"sts\": \"disabled\", \"support\": \"disabled\", \"swf\": \"disabled\", \"transcribe\": \n\"disabled\"}\n"
+                    },
+                    {
+                        "Start": "2025-03-21T01:12:28.503440595-03:00",
+                        "End": "2025-03-21T01:12:29.067686235-03:00",
+                        "ExitCode": 0,
+                        "Output": "{\"acm\": \"disabled\", \"apigateway\": \"disabled\", \"cloudformation\": \"disabled\", \n\"cloudwatch\": \"disabled\", \"config\": \"disabled\", \"dynamodb\": \"disabled\", \n\"dynamodbstreams\": \"disabled\", \"ec2\": \"disabled\", \"es\": \"disabled\", \"events\": \n\"disabled\", \"firehose\": \"disabled\", \"iam\": \"disabled\", \"kinesis\": \"disabled\", \n\"kms\": \"disabled\", \"lambda\": \"disabled\", \"logs\": \"disabled\", \"opensearch\": \n\"disabled\", \"redshift\": \"disabled\", \"resource-groups\": \"disabled\", \n\"resourcegroupstaggingapi\": \"disabled\", \"route53\": \"disabled\", \n\"route53resolver\": \"disabled\", \"s3\": \"running\", \"s3control\": \"disabled\", \n\"scheduler\": \"disabled\", \"secretsmanager\": \"disabled\", \"ses\": \"disabled\", \"sns\":\n\"disabled\", \"sqs\": \"available\", \"ssm\": \"disabled\", \"stepfunctions\": \"disabled\", \n\"sts\": \"disabled\", \"support\": \"disabled\", \"swf\": \"disabled\", \"transcribe\": \n\"disabled\"}\n"
+                    },
+                    {
+                        "Start": "2025-03-21T01:12:39.069320323-03:00",
+                        "End": "2025-03-21T01:12:39.655338688-03:00",
+                        "ExitCode": 0,
+                        "Output": "{\"acm\": \"disabled\", \"apigateway\": \"disabled\", \"cloudformation\": \"disabled\", \n\"cloudwatch\": \"disabled\", \"config\": \"disabled\", \"dynamodb\": \"disabled\", \n\"dynamodbstreams\": \"disabled\", \"ec2\": \"disabled\", \"es\": \"disabled\", \"events\": \n\"disabled\", \"firehose\": \"disabled\", \"iam\": \"disabled\", \"kinesis\": \"disabled\", \n\"kms\": \"disabled\", \"lambda\": \"disabled\", \"logs\": \"disabled\", \"opensearch\": \n\"disabled\", \"redshift\": \"disabled\", \"resource-groups\": \"disabled\", \n\"resourcegroupstaggingapi\": \"disabled\", \"route53\": \"disabled\", \n\"route53resolver\": \"disabled\", \"s3\": \"running\", \"s3control\": \"disabled\", \n\"scheduler\": \"disabled\", \"secretsmanager\": \"disabled\", \"ses\": \"disabled\", \"sns\":\n\"disabled\", \"sqs\": \"available\", \"ssm\": \"disabled\", \"stepfunctions\": \"disabled\", \n\"sts\": \"disabled\", \"support\": \"disabled\", \"swf\": \"disabled\", \"transcribe\": \n\"disabled\"}\n"
+                    },
+                    {
+                        "Start": "2025-03-21T01:12:49.65810548-03:00",
+                        "End": "2025-03-21T01:12:50.30112276-03:00",
+                        "ExitCode": 0,
+                        "Output": "{\"acm\": \"disabled\", \"apigateway\": \"disabled\", \"cloudformation\": \"disabled\", \n\"cloudwatch\": \"disabled\", \"config\": \"disabled\", \"dynamodb\": \"disabled\", \n\"dynamodbstreams\": \"disabled\", \"ec2\": \"disabled\", \"es\": \"disabled\", \"events\": \n\"disabled\", \"firehose\": \"disabled\", \"iam\": \"disabled\", \"kinesis\": \"disabled\", \n\"kms\": \"disabled\", \"lambda\": \"disabled\", \"logs\": \"disabled\", \"opensearch\": \n\"disabled\", \"redshift\": \"disabled\", \"resource-groups\": \"disabled\", \n\"resourcegroupstaggingapi\": \"disabled\", \"route53\": \"disabled\", \n\"route53resolver\": \"disabled\", \"s3\": \"running\", \"s3control\": \"disabled\", \n\"scheduler\": \"disabled\", \"secretsmanager\": \"disabled\", \"ses\": \"disabled\", \"sns\":\n\"disabled\", \"sqs\": \"available\", \"ssm\": \"disabled\", \"stepfunctions\": \"disabled\", \n\"sts\": \"disabled\", \"support\": \"disabled\", \"swf\": \"disabled\", \"transcribe\": \n\"disabled\"}\n"
+                    },
+                    {
+                        "Start": "2025-03-21T01:13:00.302542411-03:00",
+                        "End": "2025-03-21T01:13:00.842502889-03:00",
+                        "ExitCode": 0,
+                        "Output": "{\"acm\": \"disabled\", \"apigateway\": \"disabled\", \"cloudformation\": \"disabled\", \n\"cloudwatch\": \"disabled\", \"config\": \"disabled\", \"dynamodb\": \"disabled\", \n\"dynamodbstreams\": \"disabled\", \"ec2\": \"disabled\", \"es\": \"disabled\", \"events\": \n\"disabled\", \"firehose\": \"disabled\", \"iam\": \"disabled\", \"kinesis\": \"disabled\", \n\"kms\": \"disabled\", \"lambda\": \"disabled\", \"logs\": \"disabled\", \"opensearch\": \n\"disabled\", \"redshift\": \"disabled\", \"resource-groups\": \"disabled\", \n\"resourcegroupstaggingapi\": \"disabled\", \"route53\": \"disabled\", \n\"route53resolver\": \"disabled\", \"s3\": \"running\", \"s3control\": \"disabled\", \n\"scheduler\": \"disabled\", \"secretsmanager\": \"disabled\", \"ses\": \"disabled\", \"sns\":\n\"disabled\", \"sqs\": \"available\", \"ssm\": \"disabled\", \"stepfunctions\": \"disabled\", \n\"sts\": \"disabled\", \"support\": \"disabled\", \"swf\": \"disabled\", \"transcribe\": \n\"disabled\"}\n"
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:27a1dd605c973bbc33ebb36f31262e056d116afe97d8792bb00a155467f97980",
+        "ResolvConfPath": "/mydata/docker/containers/06a5be32990e004eadcc249476b8a74ecc6147f14343b4713d5cd0e15709c1d6/resolv.conf",
+        "HostnamePath": "/mydata/docker/containers/06a5be32990e004eadcc249476b8a74ecc6147f14343b4713d5cd0e15709c1d6/hostname",
+        "HostsPath": "/mydata/docker/containers/06a5be32990e004eadcc249476b8a74ecc6147f14343b4713d5cd0e15709c1d6/hosts",
+        "LogPath": "/mydata/docker/containers/06a5be32990e004eadcc249476b8a74ecc6147f14343b4713d5cd0e15709c1d6/06a5be32990e004eadcc249476b8a74ecc6147f14343b4713d5cd0e15709c1d6-json.log",
+        "Name": "/localstack-main",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": [
+            "b53f75dbc6d854ce944c28ebf17472254a51fac256b3303a76b42d2ce0428a22"
+        ],
+        "HostConfig": {
+            "Binds": [
+                "/home/kiquetal/.cache/localstack-cli/machine.json:/var/lib/localstack/cache/machine.json:ro",
+                "/home/kiquetal/.cache/localstack/volume:/var/lib/localstack",
+                "/var/run/docker.sock:/var/run/docker.sock"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {
+                "4510/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4510"
+                    }
+                ],
+                "4511/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4511"
+                    }
+                ],
+                "4512/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4512"
+                    }
+                ],
+                "4513/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4513"
+                    }
+                ],
+                "4514/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4514"
+                    }
+                ],
+                "4515/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4515"
+                    }
+                ],
+                "4516/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4516"
+                    }
+                ],
+                "4517/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4517"
+                    }
+                ],
+                "4518/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4518"
+                    }
+                ],
+                "4519/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4519"
+                    }
+                ],
+                "4520/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4520"
+                    }
+                ],
+                "4521/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4521"
+                    }
+                ],
+                "4522/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4522"
+                    }
+                ],
+                "4523/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4523"
+                    }
+                ],
+                "4524/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4524"
+                    }
+                ],
+                "4525/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4525"
+                    }
+                ],
+                "4526/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4526"
+                    }
+                ],
+                "4527/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4527"
+                    }
+                ],
+                "4528/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4528"
+                    }
+                ],
+                "4529/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4529"
+                    }
+                ],
+                "4530/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4530"
+                    }
+                ],
+                "4531/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4531"
+                    }
+                ],
+                "4532/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4532"
+                    }
+                ],
+                "4533/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4533"
+                    }
+                ],
+                "4534/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4534"
+                    }
+                ],
+                "4535/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4535"
+                    }
+                ],
+                "4536/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4536"
+                    }
+                ],
+                "4537/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4537"
+                    }
+                ],
+                "4538/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4538"
+                    }
+                ],
+                "4539/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4539"
+                    }
+                ],
+                "4540/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4540"
+                    }
+                ],
+                "4541/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4541"
+                    }
+                ],
+                "4542/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4542"
+                    }
+                ],
+                "4543/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4543"
+                    }
+                ],
+                "4544/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4544"
+                    }
+                ],
+                "4545/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4545"
+                    }
+                ],
+                "4546/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4546"
+                    }
+                ],
+                "4547/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4547"
+                    }
+                ],
+                "4548/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4548"
+                    }
+                ],
+                "4549/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4549"
+                    }
+                ],
+                "4550/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4550"
+                    }
+                ],
+                "4551/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4551"
+                    }
+                ],
+                "4552/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4552"
+                    }
+                ],
+                "4553/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4553"
+                    }
+                ],
+                "4554/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4554"
+                    }
+                ],
+                "4555/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4555"
+                    }
+                ],
+                "4556/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4556"
+                    }
+                ],
+                "4557/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4557"
+                    }
+                ],
+                "4558/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4558"
+                    }
+                ],
+                "4559/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4559"
+                    }
+                ],
+                "4560/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4560"
+                    }
+                ],
+                "4566/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4566"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": true,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "06a5be32990e004eadcc249476b8a74ecc6147f14343b4713d5cd0e15709c1d6",
+                "LowerDir": "/mydata/docker/overlay2/ff04566eeb2c4630d689aa5f062753d4f0fcdc9d3b36295fd6530faa125bee68-init/diff:/mydata/docker/overlay2/ad1727d57b9cd1f82c73bccf1948dfde48f0097348d3757b3eb0c2893b34e03a/diff:/mydata/docker/overlay2/fb52b5f409d5761c0a4f5d012363c5bb57d6a1ec440e01dfd3aba0ae7106d549/diff:/mydata/docker/overlay2/9552fb7ea08f1a91addfc6aa4d7945abe90c6ef096d73f0587eb1058c568cd65/diff:/mydata/docker/overlay2/97aab77cee910b0a9a81ee86dd0ec65522c1be3c0c50d71a8d5fbb4eb3d8e41f/diff:/mydata/docker/overlay2/c89b043c08fb23b5b0935ddadfd1985f5f691cddfec77a24b1c315038e82b7d5/diff:/mydata/docker/overlay2/37d037a742ffa960e2e9ec336c9dfdb921f02eac540b777e50707d0438a1fcc3/diff:/mydata/docker/overlay2/16d7f8f7116abb20c75b44df2502a33f3459f7d5074ba56c459e14fde5aff5f6/diff:/mydata/docker/overlay2/2934b17a87f3f760b7598964f3ab7dde8fbfba556c7574666098b2eae315beab/diff:/mydata/docker/overlay2/5a89637eef148fbe68aee18a955ab1ac5d3d204c5bb1babe3850908c1f9e2c57/diff:/mydata/docker/overlay2/321a9b92f8d1867a26def4da0a356d78214560a90d97283fe30a0e6afce1cd99/diff:/mydata/docker/overlay2/0a499a61161b896806234c20c269886ba5b58e32e88f19396564bac33284dad4/diff:/mydata/docker/overlay2/8298c12920e310d5d15890cddb6c16859fbbeeb48b21195ec01e4a27002de874/diff:/mydata/docker/overlay2/685b93668c74302dd806762f42d4f3c52781cf5b4ca8d22a3580244ff9df8bbc/diff:/mydata/docker/overlay2/84c73e93cab8f06815795532823ca585f522784b7bd9b5b9479a2f3daadaf17b/diff:/mydata/docker/overlay2/1e246cb60afd4f49b760a4c2991eb793c35d464e78b01fd5a95ccd1d85a7fd18/diff:/mydata/docker/overlay2/7aaefe63d9ae174809115d63747d147715ca0e6c68cfa3d8e89784e3c9a61a44/diff:/mydata/docker/overlay2/6fc09e3632ec02e2baba9449f2c4ba7dc4aed369e38074daa42c31ba6c8396e5/diff:/mydata/docker/overlay2/d51e6347d5b57093d27b515082207d8ef72a79bdc08365fb654fdc4b35b33f3e/diff:/mydata/docker/overlay2/877d7e5cf639cdceb4e15faa0923f906a2be796f1b13eed3696ff885b355e6c6/diff:/mydata/docker/overlay2/6abeb6d47326e9c8e690078a71239f3f528213c0e08bee1eb5ff56e2e5796464/diff:/mydata/docker/overlay2/d063ee8aa70f75fb3ef9541687cb0c80ab27c0459ee54d300f35dafd71ea7c32/diff:/mydata/docker/overlay2/09b104088f498aa351661d74870e33744b32a57eec9182731e59c726694037ee/diff:/mydata/docker/overlay2/73aa661310f63bfef12bc707c8061ee2d68459f67a632e4c48df213b896dd987/diff:/mydata/docker/overlay2/6d98392f3e16f9d8707926e2867d24ea3bac709e728c33db632e860c3bb8502c/diff:/mydata/docker/overlay2/feb896e085e9797f31f9382e4072416e305144148f464d03212d11a100dd1b38/diff:/mydata/docker/overlay2/ec8e3ef189dc6072f545f4dafd0a32b129c69291404f2d9c1fb3557a6c535e21/diff:/mydata/docker/overlay2/2ed3fcd433b8dbec6939ffb1c2ca823ef647d50c0484afc97283c796a53e29fc/diff",
+                "MergedDir": "/mydata/docker/overlay2/ff04566eeb2c4630d689aa5f062753d4f0fcdc9d3b36295fd6530faa125bee68/merged",
+                "UpperDir": "/mydata/docker/overlay2/ff04566eeb2c4630d689aa5f062753d4f0fcdc9d3b36295fd6530faa125bee68/diff",
+                "WorkDir": "/mydata/docker/overlay2/ff04566eeb2c4630d689aa5f062753d4f0fcdc9d3b36295fd6530faa125bee68/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/kiquetal/.cache/localstack-cli/machine.json",
+                "Destination": "/var/lib/localstack/cache/machine.json",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/kiquetal/.cache/localstack/volume",
+                "Destination": "/var/lib/localstack",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/var/run/docker.sock",
+                "Destination": "/var/run/docker.sock",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "06a5be32990e",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "4510/tcp": {},
+                "4511/tcp": {},
+                "4512/tcp": {},
+                "4513/tcp": {},
+                "4514/tcp": {},
+                "4515/tcp": {},
+                "4516/tcp": {},
+                "4517/tcp": {},
+                "4518/tcp": {},
+                "4519/tcp": {},
+                "4520/tcp": {},
+                "4521/tcp": {},
+                "4522/tcp": {},
+                "4523/tcp": {},
+                "4524/tcp": {},
+                "4525/tcp": {},
+                "4526/tcp": {},
+                "4527/tcp": {},
+                "4528/tcp": {},
+                "4529/tcp": {},
+                "4530/tcp": {},
+                "4531/tcp": {},
+                "4532/tcp": {},
+                "4533/tcp": {},
+                "4534/tcp": {},
+                "4535/tcp": {},
+                "4536/tcp": {},
+                "4537/tcp": {},
+                "4538/tcp": {},
+                "4539/tcp": {},
+                "4540/tcp": {},
+                "4541/tcp": {},
+                "4542/tcp": {},
+                "4543/tcp": {},
+                "4544/tcp": {},
+                "4545/tcp": {},
+                "4546/tcp": {},
+                "4547/tcp": {},
+                "4548/tcp": {},
+                "4549/tcp": {},
+                "4550/tcp": {},
+                "4551/tcp": {},
+                "4552/tcp": {},
+                "4553/tcp": {},
+                "4554/tcp": {},
+                "4555/tcp": {},
+                "4556/tcp": {},
+                "4557/tcp": {},
+                "4558/tcp": {},
+                "4559/tcp": {},
+                "4560/tcp": {},
+                "4566/tcp": {},
+                "5678/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "EXTERNAL_SERVICE_PORTS_END=4560",
+                "DOCKER_HOST=unix:///var/run/docker.sock",
+                "SERVICES=s3,sqs",
+                "ACTIVATE_PRO=0",
+                "GATEWAY_LISTEN=:4566",
+                "EXTERNAL_SERVICE_PORTS_START=4510",
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-11/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+                "PYTHON_VERSION=3.11.9",
+                "PYTHON_PIP_VERSION=24.0",
+                "PYTHON_SETUPTOOLS_VERSION=65.5.1",
+                "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/dbf0c85f76fb6e1ab42aa672ffca6f0a675d9ee4/public/get-pip.py",
+                "PYTHON_GET_PIP_SHA256=dfe9fd5c28dc98b5ac17979a953ea550cec37ae1b47a5116007395bfacff2ab9",
+                "JAVA_HOME=/usr/lib/jvm/java-11",
+                "LD_LIBRARY_PATH=/usr/lib/jvm/java-11/lib:/usr/lib/jvm/java-11/lib/server",
+                "USER=localstack",
+                "PYTHONUNBUFFERED=1",
+                "LOCALSTACK_BUILD_DATE=2024-06-11",
+                "LOCALSTACK_BUILD_GIT_HASH=de4195963",
+                "LOCALSTACK_BUILD_VERSION=3.4.1.dev"
+            ],
+            "Cmd": null,
+            "Healthcheck": {
+                "Test": [
+                    "CMD-SHELL",
+                    ".venv/bin/localstack status services --format=json"
+                ],
+                "Interval": 10000000000,
+                "Timeout": 5000000000,
+                "StartPeriod": 15000000000,
+                "Retries": 5
+            },
+            "Image": "localstack/localstack",
+            "Volumes": {
+                "/var/lib/localstack": {}
+            },
+            "WorkingDir": "/opt/code/localstack/",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "authors": "LocalStack Contributors",
+                "description": "LocalStack Docker image",
+                "maintainer": "LocalStack Team (info@localstack.cloud)"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "06ea263dcb01fff50a0eed9728a55365675f41f755898e69619b83a992af02d2",
+            "SandboxKey": "/var/run/docker/netns/06ea263dcb01",
+            "Ports": {
+                "4510/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4510"
+                    }
+                ],
+                "4511/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4511"
+                    }
+                ],
+                "4512/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4512"
+                    }
+                ],
+                "4513/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4513"
+                    }
+                ],
+                "4514/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4514"
+                    }
+                ],
+                "4515/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4515"
+                    }
+                ],
+                "4516/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4516"
+                    }
+                ],
+                "4517/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4517"
+                    }
+                ],
+                "4518/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4518"
+                    }
+                ],
+                "4519/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4519"
+                    }
+                ],
+                "4520/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4520"
+                    }
+                ],
+                "4521/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4521"
+                    }
+                ],
+                "4522/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4522"
+                    }
+                ],
+                "4523/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4523"
+                    }
+                ],
+                "4524/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4524"
+                    }
+                ],
+                "4525/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4525"
+                    }
+                ],
+                "4526/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4526"
+                    }
+                ],
+                "4527/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4527"
+                    }
+                ],
+                "4528/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4528"
+                    }
+                ],
+                "4529/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4529"
+                    }
+                ],
+                "4530/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4530"
+                    }
+                ],
+                "4531/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4531"
+                    }
+                ],
+                "4532/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4532"
+                    }
+                ],
+                "4533/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4533"
+                    }
+                ],
+                "4534/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4534"
+                    }
+                ],
+                "4535/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4535"
+                    }
+                ],
+                "4536/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4536"
+                    }
+                ],
+                "4537/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4537"
+                    }
+                ],
+                "4538/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4538"
+                    }
+                ],
+                "4539/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4539"
+                    }
+                ],
+                "4540/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4540"
+                    }
+                ],
+                "4541/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4541"
+                    }
+                ],
+                "4542/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4542"
+                    }
+                ],
+                "4543/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4543"
+                    }
+                ],
+                "4544/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4544"
+                    }
+                ],
+                "4545/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4545"
+                    }
+                ],
+                "4546/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4546"
+                    }
+                ],
+                "4547/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4547"
+                    }
+                ],
+                "4548/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4548"
+                    }
+                ],
+                "4549/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4549"
+                    }
+                ],
+                "4550/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4550"
+                    }
+                ],
+                "4551/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4551"
+                    }
+                ],
+                "4552/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4552"
+                    }
+                ],
+                "4553/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4553"
+                    }
+                ],
+                "4554/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4554"
+                    }
+                ],
+                "4555/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4555"
+                    }
+                ],
+                "4556/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4556"
+                    }
+                ],
+                "4557/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4557"
+                    }
+                ],
+                "4558/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4558"
+                    }
+                ],
+                "4559/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4559"
+                    }
+                ],
+                "4560/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4560"
+                    }
+                ],
+                "4566/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "4566"
+                    }
+                ],
+                "5678/tcp": null
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "46c53709ea04de024ed036642c2aca507bf7e1efc434216d8793bc55bf8b96d8",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "f6:69:8b:6c:0d:e8",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "f6:69:8b:6c:0d:e8",
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "2a9ff871b01679566fd0cffb254062858590f3504afbd960ecfcfc6cfeae160b",
+                    "EndpointID": "46c53709ea04de024ed036642c2aca507bf7e1efc434216d8793bc55bf8b96d8",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        }
+    }
+]
