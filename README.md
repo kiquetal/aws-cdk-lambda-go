@@ -43,4 +43,7 @@ sudo systemctl start qemu-user-static-persistent.service
 
 sudo systemctl status qemu-user-static-persistent.service
 
+## To verify multi-arch
 
+ls -l /proc/sys/fs/binfmt_misc/
+cat /proc/sys/fs/binfmt_misc/qemu-aarch64
