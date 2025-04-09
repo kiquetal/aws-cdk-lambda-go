@@ -8,7 +8,11 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "deploy:dev": "cdk deploy --context stage=dev",
+    "deploy:prod": "cdk deploy --context stage=prod",
+    "synth:dev": "cdk synth --context stage=dev",
+    "synth:prod": "cdk synth --context stage=prod"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",

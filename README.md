@@ -35,23 +35,72 @@ cd ../..
 
 ### Deploy to AWS
 
-Set the required environment variables and deploy using CDK:
+You can deploy to different environments (development or production) using either npm scripts or direct CDK commands:
+
+#### Using npm Scripts (Recommended)
 
 ```bash
-AWS_ACCOUNT=0000000000017 AWS_REGION=us-east-1 cdk2 deploy AwsCdkLambdaGoStackDev --profile devKiquetal
+# Deploy to development environment
+npm run deploy:dev -- --profile your-dev-profile
+
+# Deploy to production environment
+npm run deploy:prod -- --profile your-prod-profile
 ```
 
-This command deploys the development stack to the specified AWS account and region using the provided profile.
+#### Using Direct CDK Commands
+
+```bash
+# Deploy to development environment
+# Using environment variables for account and region
+AWS_ACCOUNT=your-dev-account-id AWS_REGION=your-dev-region cdk deploy --context stage=dev --profile your-dev-profile
+
+# Or using the context configuration from cdk.json
+cdk deploy --context stage=dev --profile your-dev-profile
+
+# Deploy to production environment
+cdk deploy --context stage=prod --profile your-prod-profile
+```
+
+The deployment will create only the stack for the specified stage. The account and region information will be taken from:
+1. Environment variables (if provided)
+2. Context configuration in cdk.json
+3. Default AWS profile configuration
 
 ### Run Locally
 
-You can test the API locally using AWS SAM:
+You can test the API locally using AWS SAM. First, synthesize the CDK stack for your desired environment:
+
+#### Using npm Scripts (Recommended)
 
 ```bash
-sam local start-api -t cdk.out/AwsCdkLambdaGoStackDev.template.json --profile devKiquetal
+# Synthesize the development stack
+npm run synth:dev
+
+# Or synthesize the production stack
+npm run synth:prod
 ```
 
-This starts a local API Gateway that invokes your Lambda function.
+#### Using Direct CDK Commands
+
+```bash
+# Synthesize the development stack
+cdk synth --context stage=dev
+
+# Or synthesize the production stack
+cdk synth --context stage=prod
+```
+
+Then start the local API Gateway using the generated CloudFormation template:
+
+```bash
+# For development environment
+sam local start-api -t cdk.out/AwsCdkLambdaGoStackDev.template.json --profile your-dev-profile
+
+# For production environment
+sam local start-api -t cdk.out/AwsCdkLambdaGoStackProd.template.json --profile your-prod-profile
+```
+
+This starts a local API Gateway that invokes your Lambda function for the specified environment.
 
 ## ARM64 Architecture Support
 
@@ -111,6 +160,29 @@ Check if ARM64 emulation is properly configured:
 ls -l /proc/sys/fs/binfmt_misc/
 cat /proc/sys/fs/binfmt_misc/qemu-aarch64
 ```
+
+## Environment Selection
+
+This project supports multiple deployment environments (development and production) using AWS CDK's context mechanism. The environment selection works as follows:
+
+1. The deployment stage is determined by the `stage` context parameter:
+   ```bash
+   cdk deploy --context stage=dev  # For development
+   cdk deploy --context stage=prod  # For production
+   ```
+
+2. If no stage is specified, it defaults to `dev` (development).
+
+3. Based on the selected stage, only one stack will be synthesized and deployed:
+   - For `dev`: `AwsCdkLambdaGoStackDev`
+   - For `prod`: `AwsCdkLambdaGoStackProd`
+
+4. Each stack uses environment-specific configurations from:
+   - Environment variables
+   - Context values in `cdk.json`
+   - Default AWS profile settings
+
+This approach ensures that only the stack for the specified environment is processed during deployment, avoiding the issue of multiple stacks being synthesized simultaneously.
 
 ## Project Structure
 
